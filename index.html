@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body  {
+          background-image : url("img/Coding-Computer-Science.jpg");
+        }
+        </style>
+    <title>DJ Codes</title>
+</head>
+<hr>
+<body>
+    <h1><b><u>Information about C</u></b></h1>
+    <hr>
+<div>
+    <p><big> C is an imperative procedural language supporting structured programming, lexical variable scope, and recursion, with a static type system. It was designed to be compiled to provide low-level access to memory and language constructs that map efficiently to machine instructions, all with minimal runtime support.</big></p>
+    <hr>
+</div>
+    <h1><b><u>PROJECTS</u></b></h1>
+    <hr>
+    <h2>CAUTION</h2>
+    <h3>code may not be visible properly so you can copy paste it</h3>
+    <hr>
+    <h2>PATTERNS</h2>
+    <hr>
+    <h3>CODE 1</h3>
+    <pre>#include <stdio.h>
+        int main() {
+           int i, j, rows;
+           printf("Enter the number of rows: ");
+           scanf("%d", &rows);
+           for (i = 1; i <= rows; ++i) {
+              for (j = 1; j <= i; ++j) {
+                 printf("* ");
+              }
+              printf("\n");
+           }
+           return 0;
+        }
+        </pre>
+        <hr>
+        <h3>OUTPUT</h3>
+        <pre>
+            *
+            * *
+            * * *
+            * * * *
+            * * * * *
+        </pre>
+        <hr>
+        <h3>CODE 2</h3>
+        <hr>
+        <pre>
+            #include <stdio.h>
+                int main() {
+                   int i, j, rows;
+                   printf("Enter the number of rows: ");
+                   scanf("%d", &rows);
+                   for (i = 1; i <= rows; ++i) {
+                      for (j = 1; j <= i; ++j) {
+                         printf("%d ", j);
+                      }
+                      printf("\n");
+                   }
+                   return 0;
+                }                
+        </pre>
+        <hr>
+        <h3>OUTPUT</h3>
+        <hr>
+        <pre>
+            1
+            1 2
+            1 2 3
+            1 2 3 4
+            1 2 3 4 5
+        </pre>
+        <hr>
+        <h3>CODE 3</h3>
+        <hr>
+        <pre>
+            #include <stdio.h>
+                int main() {
+                   int i, j;
+                   char input, alphabet = 'A';
+                   printf("Enter an uppercase character you want to print in the last row: ");
+                   scanf("%c", &input);
+                   for (i = 1; i <= (input - 'A' + 1); ++i) {
+                      for (j = 1; j <= i; ++j) {
+                         printf("%c ", alphabet);
+                      }
+                      ++alphabet;
+                      printf("\n");
+                   }
+                   return 0;
+                }                
+        </pre>
+        <hr>
+        <h3>OUTPUT</h3>
+        <pre>
+            A
+            B B
+            C C C
+            D D D D
+            E E E E E
+        </pre>
+        <hr>
+        <h3>CODE 4</h3>
+        <hr>
+        <pre>
+            #include <stdio.h>
+                int main() {
+                   int i, j, rows;
+                   printf("Enter the number of rows: ");
+                   scanf("%d", &rows);
+                   for (i = rows; i >= 1; --i) {
+                      for (j = 1; j <= i; ++j) {
+                         printf("* ");
+                      }
+                      printf("\n");
+                   }
+                   return 0;
+                }                
+        </pre>
+        <hr>
+        <pre>
+            * * * * *
+            * * * *
+            * * * 
+            * *
+            *
+        </pre>
+        <hr>
+        <h3>CODE 5</h3>
+        <hr>
+        <pre>
+            #include <stdio.h>
+                int main() {
+                   int i, j, rows;
+                   printf("Enter the number of rows: ");
+                   scanf("%d", &rows);
+                   for (i = rows; i >= 1; --i) {
+                      for (j = 1; j <= i; ++j) {
+                         printf("%d ", j);
+                      }
+                      printf("\n");
+                   }
+                   return 0;
+                }                
+        </pre>
+        <hr>
+        <h3>OUTPUT</h3>
+        <hr>
+        <pre>
+            1 2 3 4 5
+            1 2 3 4 
+            1 2 3
+            1 2
+            1
+        </pre>
+        <hr>
+        <h3>CODE 6</h3>
+        <hr>
+        <pre>
+            #include <stdio.h>
+                int main() {
+                   int i, space, rows, k = 0;
+                   printf("Enter the number of rows: ");
+                   scanf("%d", &rows);
+                   for (i = 1; i <= rows; ++i, k = 0) {
+                      for (space = 1; space <= rows - i; ++space) {
+                         printf("  ");
+                      }
+                      while (k != 2 * i - 1) {
+                         printf("* ");
+                         ++k;
+                      }
+                      printf("\n");
+                   }
+                   return 0;
+                }
+        </pre>
+        <hr>
+        <h3>OUTPUT</h3>
+        <pre>
+              *
+            * * *
+          * * * * *
+        * * * * * * *
+      * * * * * * * * *
+        </pre>
+        <hr>
+</body>
+</html>
